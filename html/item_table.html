@@ -1,0 +1,201 @@
+<!--
+   Set Location menu
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>FusionFall Retro Dex by ...</title>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" >
+        
+        <!-- Bootstrap Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../bootstrap/js/jquery-3.4.0.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+
+      </head>
+
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        text-align: center;
+      }
+      </style>
+
+<!--
+
+-->
+    <body>
+        <div class="container-fluid">
+            <div class = "row">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="../index.html">FusionFall Retro<br> Dex</a>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./monster_profile.html">Monsters</a>
+                              </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="./map.html">Map</a>
+                              </li>
+                              <!-- <li class="nav-item active">
+                                <a class="nav-link" href="./item_table.html">Items</span></a>
+                              </li> -->
+                            </ul>
+                          </div> 
+                </nav>
+            </div>
+            <br>
+            <div class="row">
+                <div class = "col-md-2">
+                        
+                    <!-- Spacer  -->
+                </div>
+
+                <form class="form-horizontal center bg-light">
+                    <fieldset>
+                    
+                    <!-- Form Name -->
+                    <legend>Form Name</legend>
+                    
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="textinput"></label>  
+                        <div class="col-md-4">
+                        <input id="textinput" name="textinput" type="text" placeholder="Name" class="form-control input-md">
+                          
+                        </div>
+                      </div>
+
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="textinput"></label>  
+                      <div class="col-md-4">
+                      <input id="textinput" name="textinput" type="text" placeholder="Max Level" class="form-control input-md">
+                        
+                      </div>
+                    </div>
+                    
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="textinput"></label>  
+                      <div class="col-md-4">
+                      <input id="textinput" name="textinput" type="text" placeholder="Min Level" class="form-control input-md">
+                        
+                      </div>
+                    </div>
+                    
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="selectbasic">Category</label>
+                      <div class="col-md-4">
+                        <select id="selectbasic" name="selectbasic" class="form-control">
+                          <option value="1">Option one</option>
+                          <option value="2">Option two</option>
+                        </select>
+                      </div>
+                    </div>
+                    
+                    <!-- Multiple Checkboxes (inline) -->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="checkboxes">Rarity</label>
+                      <div class="col-md-4">
+                        <label class="checkbox-inline" for="checkboxes-0">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+                          Common
+                        </label>
+                        <label class="checkbox-inline" for="checkboxes-1">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+                          Uncommon
+                        </label>
+                        <label class="checkbox-inline" for="checkboxes-2">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-2" value="3">
+                          Rare
+                        </label>
+                        <label class="checkbox-inline" for="checkboxes-3">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-3" value="4">
+                          Ultra Rare
+                        </label>
+                        <label class="checkbox-inline" for="checkboxes-4">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-4" value="5">
+                          All
+                        </label>
+                      </div>
+                    </div>
+                    
+                    <!-- Multiple Checkboxes (inline) -->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="checkboxes">Type</label>
+                      <div class="col-md-4">
+                        <label class="checkbox-inline" for="checkboxes-0">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+                          Hats
+                        </label>
+                        <label class="checkbox-inline" for="checkboxes-1">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+                          Glasses
+                        </label>
+                        <label class="checkbox-inline" for="checkboxes-2">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-2" value="3">
+                          Body
+                        </label>
+                        <label class="checkbox-inline" for="checkboxes-3">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-3" value="4">
+                          Legs
+                        </label>
+                        <label class="checkbox-inline" for="checkboxes-4">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-4" value="">
+                          Shoes
+                        </label>
+                        <label class="checkbox-inline" for="checkboxes-5">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-5" value="">
+                          Thrown
+                        </label>
+                        <label class="checkbox-inline" for="checkboxes-6">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-6" value="">
+                          Melee
+                        </label>
+                        <label class="checkbox-inline" for="checkboxes-7">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-7" value="">
+                          Rocket
+                        </label>
+                        <label class="checkbox-inline" for="checkboxes-8">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-8" value="">
+                          Shattergun
+                        </label>
+                        <label class="checkbox-inline" for="checkboxes-9">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-9" value="">
+                          Pistol
+                        </label>
+                        <label class="checkbox-inline" for="checkboxes-10">
+                          <input type="checkbox" name="checkboxes" id="checkboxes-10" value="">
+                          Rifle
+                        </label>
+                      </div>
+                    </div>
+                    
+                    <!-- Button -->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="submit">Single Button</label>
+                      <div class="col-md-4">
+                        <button id="submit" name="submit" class="btn btn-primary">Search!</button>
+                      </div>
+                    </div>
+                    
+                    </fieldset>
+                    </form>
+            </div>
+        </div>
+        <script src="../js/monsters.js"></script>
+        <script src="../js/searchItems.js"></script>
+    </body>
+    
+</html>

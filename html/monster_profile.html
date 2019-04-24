@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>FusionFall Retro Dex - FFR-DEX (BETA V2.0)</title>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="../css/basic.css" >
+        <script type="text/javascript" src="../bootstrap/js/jquery-3.4.0.min.js"></script>
+
+        
+        <!-- Bootstrap Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../bootstrap/js/jquery-3.4.0.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+      </head>
+<!--
+
+-->
+    <body>
+        <div class="container-fluid">
+            <div class = "row">
+                <nav class="navbar navbar-expand-lg navbar-light "> 
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <a class="button" href="./monster_profile.html">Monsters</a>
+                      <a class="button" href="./nanos.html">Nanos</a>
+                      <a href="../index.html"><img src="../img/RetroDEXlogo.png" style="width: 110%; height: 75%"></a>
+                      <a class="button" href="./map.html">Maps</a>
+                      <a class="button" href="./credits.html">Credits</a>
+                    </div>
+                </nav>
+            </div>
+            <br>
+            <div class="jumbotron">
+              <div class = "row">
+                  <div class = "col-md-1"></div>
+                  <div class="col-md-3">
+                      <form name = "searchBar" action = "./monster_profile.html" method = "GET" onsubmit="return false">
+                          <div class="form-group">
+                            <label for="category">Area: </label>
+                            <select class="form-control" id="category" onchange="getLocation(this.value)">
+                              <option>--Select Area--</option>
+                              <option value="Darklands">Darklands (28 - 36)</option>
+                              <option value="Wilds">Wilds (11-27)</option>
+                              <option value="City">City (13-24)</option>
+                              <option value="Suburbs">Suburbs (4-12)</option>
+                            </select>
+                          </div>
+                          <div class="form-group" id = "location-place" >
+                              <label for="category" id = "selectionTwoName">Location: </label>
+                                  <select class="form-control" id="selectionTwo" onchange="getMonsters(this.value)"> 
+                                  </select>
+                          </div>
+                          <div class="form-group">
+                              <label for="category" id = "selectionThreeName">Monster: </label>
+                              <select class="form-control" name = "selection" id="selectionThree">
+                              </select>
+                          </div>
+                          <button type="submit" style="height:30px; width:100px" onclick="prevForm()">Search!</button>
+                          <p> </p>
+                      </form>
+                  </div>
+                  <div class = "col-md-1"></div>
+                  <div class = "col-md-3">
+                      <img src="" id = "monsterPicture"><br>
+                      <a id = "monsterName"></a><br>
+                      <a id = "monsterBoss"></a><br>
+                      <a id = "monsterLevel"></a><br>
+                      <a id = "monsterType"></a><br>
+                      <a id = "monsterLocation"></a> <br>
+                  </div>
+                  <div class="col-md-3">
+                      <a id = "monsterDescription"></a>
+                  </div>
+                 
+                  </div>
+
+
+
+              </div>
+                    
+
+            </div>
+            <div >
+                <ul class="nav nav-tabs bg-transparent">
+                  <li><a class="nav-item nav-link" data-toggle="tab" href="#ur">Ultra Rares</a></li>
+                  <li><a class="nav-item nav-link" data-toggle="tab" href="#r">Rares</a></li>
+                  <li><a class="nav-item nav-link" data-toggle="tab" href="#uc">Uncommon</a></li>
+                  <!-- <li><a class="nav-item nav-link" data-toggle="tab" href="#menu3">Menu 3</a></li> -->
+                </ul>
+
+
+                <hr>
+                <div class="tab-content" >
+                  <div class="tab-pane fade show active" id = "ur" role="tabpanel" aria-labelledby="ultra-rare-tab">
+                    <table style="width:100%" id = "ultra-rare" >
+
+                    </table>
+                  </div>
+                  <div class="tab-pane fade" id="r" role="tabpanel" aria-labelledby="rare-tab">
+                    <table  style="width:100%" id = "rare" >
+                  </table>
+                  </div>
+                  <div class="tab-pane fade" id="uc" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    Coming Soon
+                  </div>
+                </div>
+            </div>
+            </div>
+
+
+        <script src="../js/monsters.js"></script>
+        <script src="../js/searchBar.js"></script>
+    </body>
+    
+</html>

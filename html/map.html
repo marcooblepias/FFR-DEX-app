@@ -1,0 +1,287 @@
+<!--
+   Set Location menu
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>FusionFall Retro Dex - FFR-DEX (BETA V2.0)</title>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="../css/basic.css" >
+        <script type="text/javascript" src="../bootstrap/js/jquery-3.4.0.min.js"></script>
+
+
+        
+        <!-- Bootstrap Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../bootstrap/js/jquery-3.4.0.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+      </head>
+<style>
+  table, tr, td{
+    color:white;
+    border-color: white;
+  }
+
+
+</style>
+
+<!--
+
+-->
+    <body>
+      
+        <div class="container-fluid text-center">
+            <div class = "row">
+                <nav class="navbar navbar-expand-lg navbar-light "> 
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <a class="button" href="./monster_profile.html">Monsters</a>
+                      <a class="button" href="./nanos.html">Nanos</a>
+                      <a href="../index.html"><img src="../img/RetroDEXlogo.png" style="width: 110%; height: 75%"></a>
+                      <a class="button" href="./map.html">Maps</a>
+                      <a class="button" href="./credits.html">Credits</a>
+                    </div>
+              
+                </nav>
+            </div>
+            <br>
+            <div class = "row">
+              <div class = "col-md-5">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#future">Future (1 - 4)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#suburbs">Suburbs (4 - 12)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#city">City (13 - 24)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#wilds">Wilds (11 - 27)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#darklands">Darklands (28 - 36)</a>
+                </li>
+            </ul>
+            
+                    
+            
+            
+              <!-- Tab panes -->
+              <div class="tab-content" >
+                  <div class="tab-pane container active" id="future">
+                    <table border = "1" class = "bg-light">
+                      <tr>
+                        <td></td>
+                        <td><img src="../img/map/Sector V (Future).png" id = "Sector V (Future)" onmouseover="showMap(this.id)"></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td><img src = "../img/map/Pokey Oaks North (Future).png" id = "Pokey Oaks North (Future)" onmouseover="showMap(this.id)"></td>
+                        <td><img src = "../img/map/Peach Creek Commons (Future).png" id = "Peach Creek Commons (Future)" onmouseover="showMap(this.id)"></td>
+                        <td><img src = "../img/map/Peach Creek Estates (Future).png" id = "Peach Creek Estates (Future)" onmouseover="showMap(this.id)"></td>
+                      </tr>
+                      <tr>
+                        <td><img src = "../img/map/Genius Grove (Future).png" id = "Genius Grove (Future)" onmouseover="showMap(this.id)"></td>
+                        <td><img src = "../img/map/Pokey Oaks South (Future).png" id = "Pokey Oaks South (Future)" onmouseover="showMap(this.id)"></td>
+                        <td><img src = "../img/map/Candy Cove (Future).png" id = "Candy Cove (Future)" onmouseover="showMap(this.id)"></td>
+                        <td><img src ="../img/map/Goats Junk Yard (Future).png" id = "Goats Junk Yard (Future)" onmouseover="showMap(this.id)"></td>
+                      </tr>
+
+                    </table>
+                  </div>
+                  <div class="tab-pane container fade" id="suburbs">
+                    <table border="1" class="bg-light">
+                        <tr>
+                            <td></td>
+                            <td></td> 
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../img/map/Sector V.png" id = "Sector V" onmouseover="showMap(this.id)"></td>
+                            <td></td>
+                            <td><img src="../img/map/Fosters Home.png" id = "Fosters Home" onmouseover="showMap(this.id)"></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../img/map/Nuclear Plant.png" id = "Nuclear Plant" onmouseover="showMap(this.id)"></td> 
+                            <td><img src="../img/map/Eternal Meadows.png" id = "Eternal Meadows" onmouseover="showMap(this.id)"></td>
+                            <td></td>
+                            <td><img src="../img/map/Pokey Oaks North.png" id = "Pokey Oaks North" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Peach Creek Commons.png" id = "Peach Creek Commons" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Peach Creek Estates.png" id = "Peach Creek Estates" onmouseover="showMap(this.id)"></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><img src="../img/map/Habitat Homes.png" id = "Habitat Homes" onmouseover="showMap(this.id)"></td> 
+                            <td><img src="../img/map/Endsville.png"id = "Endsville" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Eternal Vistas.png" id = "Eternal Vistas" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Genius Grove.png" id = "Genius Grove" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Pokey Oaks South.png" id = "Pokey Oaks South" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Candy Cove.png" id = "Candy Cove" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Goats Junk Yard.png" id = "Goats Junk Yard" onmouseover="showMap(this.id)"></td>
+                          </tr>
+                    </table>
+                  </div>
+                  <div class="tab-pane container fade" id="city">
+                    <table border="1" class="bg-light">
+                        <tr>
+                            <td></td>
+                            <td><img src="../img/map/City Hall.png" id = "City Hall" onmouseover="showMap(this.id)"></td> 
+                            <td><img src="../img/map/City Point.png" id = "City Point" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Galaxy Gardens.png" id = "Galaxy Gardens" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Tech Square.png" id = "Tech Square" onmouseover="showMap(this.id)"></td>
+                          </tr>
+                          <tr>
+                            <td><img src="../img/map/Townsville Park.png" id = "Townsville Park" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Townsville Center.png" id = "Townsville Center" onmouseover="showMap(this.id)"></td> 
+                            <td><img src="../img/map/City Station.png" id = "City Station" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Mojos Volcano.png" id = "Mojos Volcano" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Steam Alley.png" id = "Steam Alley" onmouseover="showMap(this.id)"></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td> 
+                            <td><img src="../img/map/Marquee Row.png" id = "Marquee Row" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Morbucks Towers.png" id = "Morbucks Towers" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Offworld Plaza.png" id = "Offworld Plaza" onmouseover="showMap(this.id)"></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td> 
+                            <td><img src="../img/map/Orchid Bay.png" id = "Orchid Bay" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Bravo Beach.png" id = "Brave Beach" onmouseover="showMap(this.id)"></td>
+                          </tr>
+                    </table>
+                  </div>
+                  <div class="tab-pane container fade" id="wilds">
+                    <table border="1" class="bg-light">
+                        <tr>
+                            <td><img src="../img/map/Monkey Mountain Top.png" id = "Monkey Mountain" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Monkey Foothills Top.png" id = "Monkey Foothills" onmouseover="showMap(this.id)"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>  
+                          </tr>
+                          <tr>
+                              <td><img src="../img/map/Monkey Mountain.png" id = "Monkey Mountain" onmouseover="showMap(this.id)"></td>
+                              <td><img src="../img/map/Monkey Foothills.png" id = "Monkey Foothills" onmouseover="showMap(this.id)"></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td> 
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><img src="../img/map/Forgotten Falls.png" id = "Forgotten Falls" onmouseover="showMap(this.id)"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+           
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><img src="../img/map/Really Twisted Forest.png" id = "Really Twisted Forest" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Twisted Forest.png" id = "Twisted Forest" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/The Ruins.png" id = "The Ruins" onmouseover="showMap(this.id)"></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><img src="../img/map/Camp Kidney.png" id = "Camp Kidney" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Mount Blackhead.png" id = "Mount Blackhead" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Devils Bluff.png" id = "Devils Bluff" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Area 51.5.png" id = "Area 51.5" onmouseover="showMap(this.id)" ></td>
+                            <td><img src="../img/map/Lower Catacombs.png"  id = "Lower Catacombs" onmouseover="showMap(this.id)"></td>
+          
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><img src="../img/map/Prickly Pines.png" id = "Prickly Pines" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Leakey Lake.png" id = "Leakey Lake" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Devils Canyon.png" id = "Devils Canyon" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Nowhere.png" id = "Nowhere" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Upper Catacombs.png" id = "Upper Catacombs" onmouseover="showMap(this.id)"></td> 
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../img/map/Acorn Flats.png" id = "Acorn Flats" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Pimpleback Mountains.png" id = "Pimpleback Mountains" onmouseover="showMap(this.id)"></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../img/map/Haunted Ridge.png" id = "Haunted Ridge" onmouseover="showMap(this.id)"></td>
+                            <td></td>
+                            <td></td> 
+                          </tr>
+                    </table>
+                  </div>
+                  <div class="tab-pane container fade" id="darklands">
+                    <table border="1" class="bg-light">
+                        <tr>
+                          <td><img src="../img/map/Fuses Lair.png" id = "Fuses Lair" onmouseover="showMap(this.id)"></td>
+                          <td><img src="../img/map/The Precipice.png" id = "The Precipice" onmouseover="showMap(this.id)"></td> 
+                          <td><img src="../img/map/Dark Glade.png" id = "Dark Glade" onmouseover="showMap(this.id)"></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td><img src="../img/map/Green Maw.png" id = "Green Maw" onmouseover="showMap(this.id)"></td>
+                          <td><img src="../img/map/Heros Hollow.png" id = "Heros Hollow" onmouseover="showMap(this.id)"></td> 
+                          <td><img src="../img/map/Huntors Crest.png" id = "Huntors Crest" onmouseover="showMap(this.id)"></td>
+                          <td><img src="../img/map/Firepits.png" id = "Firepits" onmouseover="showMap(this.id)"></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td> 
+                          <td></td>
+                          <td><img src="../img/map/Fireswamps.png" id = "Fireswamps" onmouseover="showMap(this.id)"></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td> 
+                            <td></td>
+                            <td><img src="../img/map/Dinosaur Pass.png" id = "Dinosaur Pass" onmouseover="showMap(this.id)"></td>
+                            <td><img src="../img/map/Forsaken Valley.png" id = "Forsaken Valley" onmouseover="showMap(this.id)"></td>
+                          </tr>  
+                    </table>  
+                  </div>
+                </div>
+              </div>
+              <div class = "col-md-3">
+                  <img src="" id = "mapPicture"><br>
+                  <div class="card" style="width: 18rem;">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item" id = "name"></li>
+                        <li class="list-group-item" id = "level"></li>
+                        <li class="list-group-item" id = "area"></li>
+                      </ul>
+
+                  </div>
+                    
+              </div>
+            </div>
+            </div>
+        </div>
+        <script src="../js/showMap.js"></script>
+    </body>
+    
+</html>
